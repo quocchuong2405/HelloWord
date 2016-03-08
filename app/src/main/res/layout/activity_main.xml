@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.helloword.MainActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nhapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Nhap a:"/>
+                    <EditText
+                        android:id="@+id/doca"
+                        android:layout_toRightOf="@+id/nhapa"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        />
+
+            <TextView
+                android:id="@+id/nhapb"
+                android:layout_below="@+id/nhapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+
+                android:text="Nhap b:"/>
+            <EditText
+                android:id="@+id/docb"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/nhapa"
+                android:layout_toRightOf="@+id/nhapb"
+                android:numeric="integer"
+                android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/tinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="50dp"
+            android:text="Tính"/>
+        <TextView
+            android:id="@+id/KQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:text="Kết Quả:"/>
+        <TextView
+            android:id="@+id/kqua"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:layout_toRightOf="@+id/KQ"/>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
